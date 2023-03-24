@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI-PTB|Sistem Informasi Perguruan Tinggi Bermasalah</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="popup-tambah" id="tambahForm">
+        <form action="/tambah_page.php" class="form-container">
+            <h4>Tambah Data Perguruan Tinggi Bermasalah</h4>
+            
+            <label for="kode"><b>Kode Perguruan Tinggi</b></label>
+            <input placeholder="Cari Kode PT" name="kode" required>
+
+            <label for="nama-pt"><b>Nama Perguruan Tinggi</b></label>
+            <input placeholder="Cari Nama Perguruan Tinggi" name="nama-pt" required>
+
+            <label for="domisili"><b>Domisili</b></label>
+            <input placeholder="Kabupaten/Kota" name="domisili" required>
+
+            <label for="prog-terakhir"><b>Progress Terakhir</b></label>
+            <input type="text" name="prog-terakhir">
+
+            <label for="tanggal"><b>Tanggal Progress</b></label>
+            <input type="date" placeholder="00-00-000" name="tanggal">
+
+            <label for="deadline"><b>Deadline</b></label>
+            <input type="date" placeholder="00-00-000" name="deadline">
+
+            <label for="prog_report"><b>Progress Report</b></label>
+            <input type="text" name="prog_report">
+
+            <label for="status"><b>Status Perbaikan</b></label>
+            <select name="status" id="status" required>
+                <option value="pilih">Pilih Status</option>
+                <option value="daluarsa">Sudah Daluarsa</option>
+                <option value="menunggu">Menunggu</option>
+                <option value="proses">Sedang Proses</option>
+                <option value="tutup">Tutup</option>
+            </select>
+
+            <label for="pic"><b>Person In Charge(PIC)</b></label>
+            <select name="pic" id="pic" required>
+                <option value="pilih">Pilih PIC</option>
+                <option value="dikti">LLDIKTI</option>
+            </select>
+
+            <button type="submit" class="btn">Simpan</button>      
+        </form>
+    </div>
+</body>
+</html>
