@@ -58,14 +58,25 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <form>
         <h5>Tambah Data Perguruan Tinggi Bermasalah</h5>
-        <div class="form-group">
-            <label for="kode" class="col-form-label">Kode Perguruan Tinggi</label>
+        <div class="card-content">
+            <div class="card-body">
+                <form method="POST" name="frm" class="form-group">
+                    <div class="row">
+
+            <div class="col-md-6 col-12">
+                <div class="form-group">
+            <label for="kode"><b>Kode Perguruan Tinggi</b></label>
             <input type="text" class="form-control" id="kode">
-            <label for="pt-name" class="col-form-label">Nama Perguruan Tinggi</label>
+            </div></div>
+
+            <div class="col-md-6 col-12">
+                <div class="form-group">
+            <label for="pt-name"><b>Nama Perguruan Tinggi</b></label>
             <input type="text" class="form-control" id="pt-name">
-        </div>
+            </div></div>
+
+        </div></div>
     </form>
   </div>
 
