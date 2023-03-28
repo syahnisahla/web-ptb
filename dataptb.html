@@ -59,25 +59,45 @@
   <div class="modal-content">
     <span class="close">&times;</span>
         <h5>Tambah Data Perguruan Tinggi Bermasalah</h5>
-        <div class="card-content">
-            <div class="card-body">
+        <div class="container container-scrollable">
                 <form method="POST" name="frm" class="form-group">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <label for="kode"><b>Kode Perguruan Tinggi</b></label><br>
-                            <input type="text" class="form-control" id="kode">
-                        <div class="col-sm-6">
-                            <label for="pt-name"><b>Nama Perguruan Tinggi</b></label><br>
-                            <input type="text" class="form-control" id="pt-name">
+                        <div class="col">
+                            <div class="inputBox">
+                                <span><b>Kode Perguruan Tinggi</b></span>
+                                <input type="text" id="kode">
+                            </div>
+                            <div class="inputBox">
+                                <span><b>Domisili</b></span>
+                                <input type="text" id="domisili">
+                            </div>
+                            <div class="inputBox">
+                                <span><b>Progress Terakhir</b></span>
+                                <input type="textarea" id="prog-terakhir">
+                            </div>
+                            <div class="inputBox">
+                                <span><b>Tanggal Progress</b></span>
+                                <input type="date" id="date">
+                            </div>
+                            <div class="inputBox">
+                                <span><b>Progress Report</b></span>
+                                <input type="text" id="prog-report">
+                            </div>
+                            <button type="submit" class="btn btn primary" name="submit">Simpan</button>
                         </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
+                        <div class="col">
+                            <div class="inputBox">
+                                <span><b>Nama Perguruan Tinggi</b></span>
+                                <input type="text" id="name">
+                            </div>
+                            <div class="inputBox">
+                                <span><b>Deadline</b></span>
+                                <input type="date" id="deadline">
+                            </div>
+                        </div> 
+                </form>  
         </div>
-                
-  </div>
-
+    </div>
 </div>
 
 <script>
