@@ -209,4 +209,13 @@ button {
     cursor: pointer;
   }
 
-  
+  .form-group {
+    font-size: 13px;
+  }
+
+  .form-control {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(236, 236, 236);
+  }
